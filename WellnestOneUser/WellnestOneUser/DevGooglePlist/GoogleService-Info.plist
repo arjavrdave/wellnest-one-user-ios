@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>488670133817-5gdrsg2mb2k27ecvpn5i5d3udja0d1ab.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.488670133817-5gdrsg2mb2k27ecvpn5i5d3udja0d1ab</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>488670133817-ihuul94ldf8jqd6h0j5l2g9okuhkk1aa.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD2jtDMTzvxXCb8YkUDHjRnJcJMoqB_a_g</string>
+	<key>GCM_SENDER_ID</key>
+	<string>488670133817</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.wellnest.one</string>
+	<key>PROJECT_ID</key>
+	<string>wellest-one-dev</string>
+	<key>STORAGE_BUCKET</key>
+	<string>wellest-one-dev.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:488670133817:ios:5e236cb5254b85c9b9d7e8</string>
+</dict>
+</plist>

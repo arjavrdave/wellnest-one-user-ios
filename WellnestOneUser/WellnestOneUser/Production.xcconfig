@@ -1,0 +1,20 @@
+//
+//  Production.xcconfig
+//  WellnestOneUser
+//
+//  Created by Nihar Jagad on 07/11/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "Pods/Target Support Files/Pods-Prod/Pods-Prod.release.xcconfig"
+#include "Pods/Target Support Files/Pods-Prod/Pods-Prod.debug.xcconfig"
+SLASH = /
+
+apiKey = a4rrPVGvnP5rj8Sa
+apiPassword = zL5KVgxTd3k6sgHDPbex6zTqpEWDugxSAw79R5Vr
+BASE_URL = https:$(SLASH)/api.wellnest.tech
+AZURE_BASE_URL = https:/$(SLASH)wellnestprodstorage.blob.core.windows.net
+AZURE_STORAGE_NAME = wellnestprodstorage
+//TODO: Need to be change
+AMPLITUDE_KEY = 5d11f7fe4825c10e45af712331aa92ba
