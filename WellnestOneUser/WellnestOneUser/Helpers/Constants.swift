@@ -162,7 +162,7 @@ enum AppConfiguration {
         return shopUrl 
     }
     static var wellnestAppUrl: String {
-        let appUrl = "https://apps.apple.com/in/app/wellnest-one/id6444249671"
+        let appUrl = "https://wellnest.page.link/Zi7X"
         return appUrl
     }
 }

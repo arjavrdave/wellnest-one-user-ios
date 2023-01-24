@@ -144,7 +144,7 @@ class ProfileSettingViewController: UIParentViewController {
         let textToShare = "Hello, I recommend Wellnest 12L machine for quick, easy and accurate heart check-up. Get the device here " + AppConfiguration.wellnestShopUrl + " and download the app here " + AppConfiguration.wellnestAppUrl
         let attributedOriginalText = NSMutableAttributedString(string: textToShare)
         attributedOriginalText.addAttribute(NSAttributedString.Key.link, value: AppConfiguration.wellnestShopUrl, range: NSRange(location: 20, length: 106))
-        attributedOriginalText.addAttribute(NSAttributedString.Key.link, value: AppConfiguration.wellnestShopUrl, range: NSRange(location: 28, length: 168))
+        attributedOriginalText.addAttribute(NSAttributedString.Key.link, value: AppConfiguration.wellnestShopUrl, range: NSRange(location: 28, length: 141))
         
             let objectsToShare: [Any] = [textToShare]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
