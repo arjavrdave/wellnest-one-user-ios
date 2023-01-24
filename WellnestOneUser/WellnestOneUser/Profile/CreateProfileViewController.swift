@@ -33,7 +33,7 @@ class CreateProfileViewController: UIParentViewController {
     @IBOutlet weak var segmentDegreeOfTobacco: UISegmentedControl!
     @IBOutlet weak var segmentLevelOfExercise: UISegmentedControl!
     @IBOutlet weak var lblTitle: UILabel!
-    private var dataHeightInFeet: [[String]] = [(1...12).map(String.init), ["Feet"], (1...11).map(String.init), ["Inches"]]
+    private var dataHeightInFeet: [[String]] = [(1...12).map(String.init), ["Feet"], (0...11).map(String.init), ["Inches"]]
     private var dataHeightInCms: [[String]] = [(0...394).map(String.init), ["Cms"]]
     private var dataWeightInKgs: [[String]] = [(0...226).map(String.init), ["Kgs"], (0...9).map(String.init), ["Grams"]]
     private var dataWeightInLbs: [[String]] = [(0...499).map(String.init), ["Lbs"]]
@@ -291,7 +291,7 @@ class CreateProfileViewController: UIParentViewController {
         if self.heightUnitSelected == .Ft {
             let (feet, inches) = self.convertCmsToFeet(cms: self.selectedHeightInCms)
             self.heightPicker.selectRow(feet - 1, inComponent: 0, animated: false)
-            self.heightPicker.selectRow(inches - 1, inComponent: 2, animated: false)
+            self.heightPicker.selectRow(inches, inComponent: 2, animated: false)
             self.txtHeight.text = "\(feet)'\(inches)\""
         } else {
             self.heightPicker.selectRow(self.selectedHeightInCms, inComponent: 0, animated: false)

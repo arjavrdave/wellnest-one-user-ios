@@ -985,12 +985,16 @@ to Record ECG</string>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Swipe_1" translatesAutoresizingMaskIntoConstraints="NO" id="PsU-0s-s1O">
                                                 <rect key="frame" x="414" y="0.0" width="414" height="350"/>
+                                                <color key="backgroundColor" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="0.94402682070700539" colorSpace="custom" customColorSpace="displayP3"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Swipe_2" translatesAutoresizingMaskIntoConstraints="NO" id="pGp-5J-ZFY">
                                                 <rect key="frame" x="828" y="0.0" width="414" height="350"/>
+                                                <color key="backgroundColor" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </imageView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Swipe_3" translatesAutoresizingMaskIntoConstraints="NO" id="552-An-NIy">
                                                 <rect key="frame" x="1242" y="0.0" width="414" height="350"/>
+                                                <color key="backgroundColor" red="0.89411764705882346" green="0.89411764705882346" blue="0.89411764705882346" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" systemColor="tintColor"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -1029,7 +1033,7 @@ to Record ECG</string>
                             </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="oum-z4-kd0"/>
-                        <color key="backgroundColor" name="Background Color"/>
+                        <color key="backgroundColor" red="0.89411764705882357" green="0.89411764705882357" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="v2F-jc-mHU" firstAttribute="trailing" secondItem="eTk-fr-Jxh" secondAttribute="trailing" constant="-7" id="0ZP-SU-9vo"/>
                             <constraint firstItem="uF8-ME-qUn" firstAttribute="centerY" secondItem="n1r-jP-Cnn" secondAttribute="centerY" constant="-50" id="3bP-HE-4Xw"/>
@@ -1263,7 +1267,7 @@ to Record ECG</string>
         <image name="image_pairdevice" width="720" height="961"/>
         <image name="one_logo" width="73" height="24"/>
         <namedColor name="Background Color">
-            <color red="0.93300002813339233" green="0.93300002813339233" blue="0.93300002813339233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.89411764705882357" green="0.89411764705882357" blue="0.89411764705882357" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Background Disable Color">
             <color red="0.86699998378753662" green="0.86699998378753662" blue="0.86699998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1285,6 +1289,9 @@ to Record ECG</string>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
