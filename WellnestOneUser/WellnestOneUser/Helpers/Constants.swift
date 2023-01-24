@@ -102,6 +102,8 @@ enum CommonConfiguration {
 
     static let PDF_Width : CGFloat = 841.89
     static let PDF_Height : CGFloat = 595.28
+    
+    static let Wellnest_AppVersion : String = "Wellnest One v"
 
 }
 
@@ -154,6 +156,14 @@ enum AppConfiguration {
     static var versionCode: String {
         let bundle = Bundle.main
         return bundle.object(forInfoDictionaryKey: kCFBundleVersionKey as! String) as! String
+    }
+    static var wellnestShopUrl: String {
+        let shopUrl = "https://www.wellnest.tech/shop"
+        return shopUrl 
+    }
+    static var wellnestAppUrl: String {
+        let appUrl = "https://apps.apple.com/in/app/wellnest-one/id6444249671"
+        return appUrl
     }
 }
 

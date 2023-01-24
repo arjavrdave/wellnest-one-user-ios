@@ -1210,6 +1210,7 @@ Smoking</string>
                     <connections>
                         <outlet property="imgProfile" destination="7xL-G2-M3Y" id="xm1-xT-4RU"/>
                         <outlet property="lblAgeGender" destination="GnM-1B-rMa" id="Xis-vD-37b"/>
+                        <outlet property="lblAppVersion" destination="JHP-T5-oGo" id="fya-Vv-hcb"/>
                         <outlet property="lblBMI" destination="5Ip-ez-2cT" id="of1-N8-99J"/>
                         <outlet property="lblExercise" destination="9kz-8D-JNW" id="CBT-gC-WLF"/>
                         <outlet property="lblHeight" destination="qb0-7f-1UX" id="xKU-4t-1kE"/>

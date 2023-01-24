@@ -26,6 +26,7 @@ class ProfileSettingViewController: UIParentViewController {
     @IBOutlet weak var lblSmoking: UILabel!
     @IBOutlet weak var lblTobacco: UILabel!
     @IBOutlet weak var lblExercise: UILabel!
+    @IBOutlet weak var lblAppVersion: UILabel!
     
     var presenter: ProfileSettingPresenter?
     
@@ -37,12 +38,16 @@ class ProfileSettingViewController: UIParentViewController {
         }
         self.presenter = ProfileSettingPresenter(viewController: self)
         self.presenter?.getAccount(account: self.account)
+        displayAppVersion()
     }
     override func viewDidAppear(_ animated: Bool) {
         self.presenter = ProfileSettingPresenter(viewController: self)
     }
     override func viewDidDisappear(_ animated: Bool) {
         self.presenter = nil
+    }
+    func displayAppVersion(){
+        lblAppVersion.text = CommonConfiguration.Wellnest_AppVersion + AppConfiguration.versionName
     }
     func updateUIby(account: Account) {
         DispatchQueue.main.async {
@@ -136,7 +141,11 @@ class ProfileSettingViewController: UIParentViewController {
                 }
             }
     @IBAction func brnRecommendTapped(_ sender: UIButton) {
-        let textToShare = "Hello, I recommend Wellnest 12L machine for quick, easy and accurate heart check-up.  Get the device here (link) and download the app here (link)."
+        let textToShare = "Hello, I recommend Wellnest 12L machine for quick, easy and accurate heart check-up. Get the device here " + AppConfiguration.wellnestShopUrl + " and download the app here " + AppConfiguration.wellnestAppUrl
+        let attributedOriginalText = NSMutableAttributedString(string: textToShare)
+        attributedOriginalText.addAttribute(NSAttributedString.Key.link, value: AppConfiguration.wellnestShopUrl, range: NSRange(location: 20, length: 106))
+        attributedOriginalText.addAttribute(NSAttributedString.Key.link, value: AppConfiguration.wellnestShopUrl, range: NSRange(location: 28, length: 168))
+        
             let objectsToShare: [Any] = [textToShare]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             activityVC.popoverPresentationController?.sourceView = sender
