@@ -953,11 +953,11 @@ to Record ECG</string>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PTz-91-kvR" customClass="UIViewShadow" customModule="Dev" customModuleProvider="target">
-                                <rect key="frame" x="147" y="796" width="4" height="4"/>
+                                <rect key="frame" x="147" y="795.5" width="5" height="5"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="PTz-91-kvR" secondAttribute="height" id="6xO-g1-ydK"/>
-                                    <constraint firstAttribute="width" constant="4" id="9Cm-YH-7sq"/>
+                                    <constraint firstAttribute="width" constant="5" id="9Cm-YH-7sq"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -1017,8 +1017,8 @@ to Record ECG</string>
                                 <color key="progressTintColor" red="0.0" green="0.77749687430000003" blue="0.5288696289" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="trackTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to see how to wear belt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuX-qb-JWZ">
-                                <rect key="frame" x="94" y="603" width="226" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe to see how to wear belt" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuX-qb-JWZ">
+                                <rect key="frame" x="10" y="603" width="394" height="20"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1042,9 +1042,11 @@ to Record ECG</string>
                             <constraint firstItem="PTz-91-kvR" firstAttribute="leading" secondItem="4kp-4M-qqa" secondAttribute="leading" constant="20" id="Arc-Os-qhY"/>
                             <constraint firstItem="4E0-Hr-Unk" firstAttribute="top" secondItem="oum-z4-kd0" secondAttribute="top" constant="25" id="Bhn-xG-AuG"/>
                             <constraint firstItem="PuX-qb-JWZ" firstAttribute="top" secondItem="uF8-ME-qUn" secondAttribute="bottom" constant="30" id="CHG-jp-nQ3"/>
+                            <constraint firstItem="PuX-qb-JWZ" firstAttribute="leading" secondItem="n1r-jP-Cnn" secondAttribute="leading" constant="10" id="Fsa-hr-vUR"/>
                             <constraint firstItem="4E0-Hr-Unk" firstAttribute="centerX" secondItem="n1r-jP-Cnn" secondAttribute="centerX" id="JCJ-bq-iPa"/>
                             <constraint firstItem="uF8-ME-qUn" firstAttribute="leading" secondItem="oum-z4-kd0" secondAttribute="leading" id="JNv-pK-jEd"/>
                             <constraint firstItem="oum-z4-kd0" firstAttribute="trailing" secondItem="eTk-fr-Jxh" secondAttribute="trailing" constant="20" id="K3B-8M-nrV"/>
+                            <constraint firstAttribute="trailing" secondItem="PuX-qb-JWZ" secondAttribute="trailing" constant="10" id="Oza-0Q-ZeV"/>
                             <constraint firstItem="TBJ-aT-MHe" firstAttribute="centerY" secondItem="4E0-Hr-Unk" secondAttribute="centerY" id="QJj-sO-pL5"/>
                             <constraint firstItem="v2F-jc-mHU" firstAttribute="centerY" secondItem="eTk-fr-Jxh" secondAttribute="centerY" constant="-1" id="WHI-LC-hdV"/>
                             <constraint firstItem="PTz-91-kvR" firstAttribute="width" secondItem="PTz-91-kvR" secondAttribute="height" id="Ytu-js-Eap"/>
@@ -1068,6 +1070,7 @@ to Record ECG</string>
                         <outlet property="imageBattery" destination="eTk-fr-Jxh" id="f7r-gH-Z8k"/>
                         <outlet property="imageBatteryStatus" destination="v2F-jc-mHU" id="drR-Az-ZKr"/>
                         <outlet property="imageConnections" destination="4lp-b2-BtT" id="Kp8-B7-eX0"/>
+                        <outlet property="lblSwipeImageText" destination="PuX-qb-JWZ" id="yTY-BR-Az9"/>
                         <outlet property="pageControl" destination="8FH-lw-fKH" id="vlh-Iy-D0u"/>
                         <outlet property="scrollView" destination="uF8-ME-qUn" id="GdT-sW-Ncd"/>
                         <outlet property="viewReadyRec" destination="PTz-91-kvR" id="zzU-5c-9Qx"/>

@@ -28,9 +28,11 @@ class PreRecordingConnectionViewController: UIParentViewController, StatusDelega
     @IBOutlet weak var btnRecordECG: UIButtonSoftUI!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var lblSwipeImageText: UILabel!
     var communicationHandler: CommunicationProtocol = CommunicationModule.getCommunicationHandler()
     var isReRecordFlow = false
     var recordingType: RecordingType = .standardECG
+    var swipeText : [String] = ["Swipe to see how to wear belt","Raise arms and place belt with V1 and V2 symmetrically on the sternal","Lower arms and adjust the flaps","Close the buckle flaps over V1 and V2"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -158,5 +160,6 @@ class PreRecordingConnectionViewController: UIParentViewController, StatusDelega
             self.pageControl.currentPage = pageIndex
             self.pageControl.updateCurrentPageDisplay()
         }
+            lblSwipeImageText.text = swipeText[pageIndex]
     }
 }
