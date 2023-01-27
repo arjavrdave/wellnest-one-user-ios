@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		430048E329840235000ABA70 /* WellnestBLE.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430048E229840235000ABA70 /* WellnestBLE.xcframework */; };
+		430048E429840235000ABA70 /* WellnestBLE.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 430048E229840235000ABA70 /* WellnestBLE.xcframework */; };
 		430BB6A12983FAAA006F7B12 /* ci_post_clone.sh in Resources */ = {isa = PBXBuildFile; fileRef = 430BB6A02983FAAA006F7B12 /* ci_post_clone.sh */; };
 		430BB6A22983FAAA006F7B12 /* ci_post_clone.sh in Resources */ = {isa = PBXBuildFile; fileRef = 430BB6A02983FAAA006F7B12 /* ci_post_clone.sh */; };
 		43322D5B2930E04D00EDB715 /* ChooseMemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43322D5A2930E04D00EDB715 /* ChooseMemberViewController.swift */; };
@@ -281,6 +283,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		430048E229840235000ABA70 /* WellnestBLE.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WellnestBLE.xcframework; path = WellnestOneUser/WellnestBLE.xcframework; sourceTree = "<group>"; };
 		430BB6A02983FAAA006F7B12 /* ci_post_clone.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ci_post_clone.sh; sourceTree = "<group>"; };
 		43322D5A2930E04D00EDB715 /* ChooseMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseMemberViewController.swift; sourceTree = "<group>"; };
 		434CEC51291BB12600F27E66 /* UserMedicalHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMedicalHistory.swift; sourceTree = "<group>"; };
@@ -314,7 +317,6 @@
 		43A3C6CA29192AE800CF1C0A /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		43A3C6CC29192B1400CF1C0A /* Production.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Production.xcconfig; sourceTree = "<group>"; };
 		43A3C6CD29192B2400CF1C0A /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
-		43A3C6CE29192EE800CF1C0A /* WellnestBLE.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WellnestBLE.xcframework; path = "../../ongoing/Wellnest FrameWork/Live/WellnestBLE.xcframework"; sourceTree = "<group>"; };
 		43A3C6D629192FE500CF1C0A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		43A3C6DB291930B300CF1C0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		43A3C6DD291930C700CF1C0A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -420,6 +422,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430048E329840235000ABA70 /* WellnestBLE.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +430,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				430048E429840235000ABA70 /* WellnestBLE.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -790,7 +794,7 @@
 		E7AFC3FCFB2B26109D551D4B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				43A3C6CE29192EE800CF1C0A /* WellnestBLE.xcframework */,
+				430048E229840235000ABA70 /* WellnestBLE.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
