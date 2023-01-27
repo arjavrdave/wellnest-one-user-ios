@@ -1,0 +1,63 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name WellnestBLE
+import Combine
+import CoreBluetooth
+import CryptoSwift
+import Foundation
+import Swift
+import UIKit
+@_exported import WellnestBLE
+@_hasMissingDesignatedInitializers open class Configuration {
+  public static var ApiUrl: Swift.String?
+  public static var ApiKey: Swift.String?
+  public static var ApiPassword: Swift.String?
+  @objc deinit
+}
+public protocol StatusDelegate {
+  func didGetBatteryStatus(batteryLevel: Swift.Int8, chargingLevel: Swift.Int8)
+  func didGetElectrodeStatus(electrodeStatus: Swift.Array<Swift.UInt8>)
+}
+public protocol RecordingDelegate {
+  func recordingCompleted(rawData: Foundation.Data, parsedData: [[Swift.Double]])
+  func recordingDisrupted()
+  func getLiveRecording(rawData: [[Swift.Double]])
+}
+public protocol PeripheralDelegate {
+  func didDiscoverPeripherals(peripherals: [WellnestBLE.WellnestPeripheral])
+  func authentication(peripheral: WellnestBLE.WellnestPeripheral?, error: Swift.String?)
+  func didDisconnect(peripheral: WellnestBLE.WellnestPeripheral?, error: Foundation.NSError?)
+}
+public protocol CommunicationProtocol {
+  func startScan()
+  func connect(peripheral: WellnestBLE.WellnestPeripheral)
+  func startRecording()
+  func getBatteryStatus()
+  func getElectrodeStatus()
+  func autoconnect()
+  func isConnected() -> Swift.Bool
+  func stopRecording(wantData: Swift.Bool)
+  var peripheralDelegate: WellnestBLE.PeripheralDelegate? { get set }
+  var recordingDelegate: WellnestBLE.RecordingDelegate? { get set }
+  var statusDelegate: WellnestBLE.StatusDelegate? { get set }
+}
+@objc @_inheritsConvenienceInitializers open class CommunicationFactory : ObjectiveC.NSObject {
+  public static func getCommunicationHandler() -> WellnestBLE.CommunicationProtocol
+  public static func getMockCommunicationHandler() -> WellnestBLE.CommunicationProtocol
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers open class DataParser : ObjectiveC.NSObject {
+  open func setUpDataForRecording(_ bytesList: [[Swift.Double]]) -> [[Swift.Double]]
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers open class WellnestPeripheral : ObjectiveC.NSObject, Swift.Codable {
+  public var identifier: Foundation.UUID
+  public var name: Swift.String?
+  public var id: Swift.Int?
+  @objc required override dynamic public init()
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc deinit
+}

@@ -1249,7 +1249,7 @@ to Record ECG</string>
             <size key="intrinsicContentSize" width="113" height="31"/>
         </designable>
         <designable name="fnp-Ch-ngv">
-            <size key="intrinsicContentSize" width="95" height="27"/>
+            <size key="intrinsicContentSize" width="102" height="26"/>
         </designable>
     </designables>
     <resources>
