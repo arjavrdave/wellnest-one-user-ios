@@ -189,7 +189,6 @@
 		43F3B343293A01E100CC588F /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3B341293A01E000CC588F /* HomeViewPresenter.swift */; };
 		43F3B345293A295B00CC588F /* PatientRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3B344293A295A00CC588F /* PatientRouter.swift */; };
 		43F3B346293A295B00CC588F /* PatientRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F3B344293A295A00CC588F /* PatientRouter.swift */; };
-		5A2A8A23084C48A39ACF4227 /* Pods_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF576861621C463A92675F20 /* Pods_Dev.framework */; };
 		5D90771C297E54BD000EAA3E /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D9076FB297E54BD000EAA3E /* Montserrat-LightItalic.ttf */; };
 		5D90771D297E54BD000EAA3E /* Montserrat-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D9076FB297E54BD000EAA3E /* Montserrat-LightItalic.ttf */; };
 		5D90771E297E54BD000EAA3E /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5D9076FC297E54BD000EAA3E /* Montserrat-Medium.ttf */; };
@@ -258,7 +257,6 @@
 		5DB5E281297ABB02001A16A6 /* WellnestBLE.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB5E27F297ABB02001A16A6 /* WellnestBLE.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5DB5E283297ABB08001A16A6 /* WellnestBLE.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB5E27F297ABB02001A16A6 /* WellnestBLE.xcframework */; };
 		5DB5E284297ABB08001A16A6 /* WellnestBLE.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DB5E27F297ABB02001A16A6 /* WellnestBLE.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E1CD071A73514FB10B95411C /* Pods_Prod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6F5EEDAB56609C7C749198 /* Pods_Prod.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -287,7 +285,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0C1D38BC223D7A660AB603B1 /* Pods-Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dev.debug.xcconfig"; path = "Target Support Files/Pods-Dev/Pods-Dev.debug.xcconfig"; sourceTree = "<group>"; };
 		43322D5A2930E04D00EDB715 /* ChooseMemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseMemberViewController.swift; sourceTree = "<group>"; };
 		434CEC51291BB12600F27E66 /* UserMedicalHistory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMedicalHistory.swift; sourceTree = "<group>"; };
 		434CEC54291BB12600F27E66 /* UserMedicalHistoryRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMedicalHistoryRouter.swift; sourceTree = "<group>"; };
@@ -387,7 +384,6 @@
 		43F3B33E2939FD8C00CC588F /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		43F3B341293A01E000CC588F /* HomeViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
 		43F3B344293A295A00CC588F /* PatientRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientRouter.swift; sourceTree = "<group>"; };
-		5A674B07AF930F31EC1111DF /* Pods-Prod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prod.release.xcconfig"; path = "Target Support Files/Pods-Prod/Pods-Prod.release.xcconfig"; sourceTree = "<group>"; };
 		5D9076FB297E54BD000EAA3E /* Montserrat-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-LightItalic.ttf"; sourceTree = "<group>"; };
 		5D9076FC297E54BD000EAA3E /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		5D9076FD297E54BD000EAA3E /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -421,10 +417,6 @@
 		5D90771A297E54BD000EAA3E /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		5D90771B297E54BD000EAA3E /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
 		5DB5E27F297ABB02001A16A6 /* WellnestBLE.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = WellnestBLE.xcframework; path = ../../Live/WellnestBLE.xcframework; sourceTree = "<group>"; };
-		7045E7529D091C8ACC78E1AC /* Pods-Prod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Prod.debug.xcconfig"; path = "Target Support Files/Pods-Prod/Pods-Prod.debug.xcconfig"; sourceTree = "<group>"; };
-		8871CBD326759195FC9394BD /* Pods-Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Dev.release.xcconfig"; path = "Target Support Files/Pods-Dev/Pods-Dev.release.xcconfig"; sourceTree = "<group>"; };
-		BC6F5EEDAB56609C7C749198 /* Pods_Prod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Prod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF576861621C463A92675F20 /* Pods_Dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -432,7 +424,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A2A8A23084C48A39ACF4227 /* Pods_Dev.framework in Frameworks */,
 				5DB5E280297ABB02001A16A6 /* WellnestBLE.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -441,7 +432,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1CD071A73514FB10B95411C /* Pods_Prod.framework in Frameworks */,
 				5DB5E283297ABB08001A16A6 /* WellnestBLE.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,10 +442,6 @@
 		1FCF36E4492766FA4E4E22E5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0C1D38BC223D7A660AB603B1 /* Pods-Dev.debug.xcconfig */,
-				8871CBD326759195FC9394BD /* Pods-Dev.release.xcconfig */,
-				7045E7529D091C8ACC78E1AC /* Pods-Prod.debug.xcconfig */,
-				5A674B07AF930F31EC1111DF /* Pods-Prod.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -803,8 +789,6 @@
 			children = (
 				43A3C6CE29192EE800CF1C0A /* WellnestBLE.xcframework */,
 				5DB5E27F297ABB02001A16A6 /* WellnestBLE.xcframework */,
-				BF576861621C463A92675F20 /* Pods_Dev.framework */,
-				BC6F5EEDAB56609C7C749198 /* Pods_Prod.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -816,11 +800,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43A3C6652919066D00CF1C0A /* Build configuration list for PBXNativeTarget "Dev" */;
 			buildPhases = (
-				CE5442CC2E948F3F205F266F /* [CP] Check Pods Manifest.lock */,
 				43A3C64D2919066B00CF1C0A /* Sources */,
 				43A3C64E2919066B00CF1C0A /* Frameworks */,
 				43A3C64F2919066B00CF1C0A /* Resources */,
-				F04DB8A6B32084D49C4EE9EF /* [CP] Embed Pods Frameworks */,
 				5DB5E282297ABB03001A16A6 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -836,11 +818,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 43A3C6C4291913D500CF1C0A /* Build configuration list for PBXNativeTarget "Prod" */;
 			buildPhases = (
-				7C488E8D18ADE87D967AE665 /* [CP] Check Pods Manifest.lock */,
 				43A3C6BB291913D500CF1C0A /* Sources */,
 				43A3C6BF291913D500CF1C0A /* Frameworks */,
 				43A3C6C0291913D500CF1C0A /* Resources */,
-				F0A76800A4182084969264CD /* [CP] Embed Pods Frameworks */,
 				5DB5E285297ABB08001A16A6 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -988,87 +968,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		7C488E8D18ADE87D967AE665 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Prod-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CE5442CC2E948F3F205F266F /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Dev-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F04DB8A6B32084D49C4EE9EF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Dev/Pods-Dev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Dev/Pods-Dev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dev/Pods-Dev-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0A76800A4182084969264CD /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Prod/Pods-Prod-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Prod/Pods-Prod-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Prod/Pods-Prod-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		43A3C64D2919066B00CF1C0A /* Sources */ = {
