@@ -77,5 +77,7 @@
 	<string>$(AZURE_STORAGE_NAME)</string>
 	<key>baseUrl</key>
 	<string>$(BASE_URL)</string>
+    <key>ITSAppUsesNonExemptEncryption</key>
+    <false/>
 </dict>
 </plist>
