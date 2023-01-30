@@ -19,9 +19,9 @@ class MedicalHistoryPresenter: NSObject {
     func createProfile(account: IAccount?, image: UIImage?, storage: IStorage?) {
         account?.createProfile(completion: { error in
             if error == nil {
-                if let id = account?.id, let imageUpload = image {
+                if let id = account?.profileId, let imageUpload = image {
                     var storageobj = storage
-                    storageobj?.id = id
+                  //  storageobj?.id = id
                     self.getSASTokenForUser(account: account, image: imageUpload, storage: storageobj)
                 } else {
                     self.interfaceVC?.updateUIBySuccess()
@@ -43,8 +43,8 @@ class MedicalHistoryPresenter: NSObject {
         })
     }
     func uploadUserPhoto(account: IAccount?, image: UIImage, sasToken: String) {
-        if let id = account?.id {
-            AzureUtil.shared.uploadProfilePhoto(profileId: String(id), sasToken: sasToken, image: image) { (error) in
+        if let id = account?.profileId {
+            AzureUtil.shared.uploadProfilePhoto(profileId: id, sasToken: sasToken, image: image) { (error) in
                 if error == nil {
                     self.interfaceVC?.updateUIBySuccess()
                 } else {
