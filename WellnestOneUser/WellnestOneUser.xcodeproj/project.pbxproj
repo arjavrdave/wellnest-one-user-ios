@@ -832,12 +832,15 @@
 				43A3C64F2919066B00CF1C0A /* Resources */,
 				5DB5E282297ABB03001A16A6 /* Embed Frameworks */,
 				566048AD578F51DB60419D0C /* [CP] Embed Pods Frameworks */,
+				5D0D5A282988E2D000C76869 /* Run Script */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Dev;
+			packageProductDependencies = (
+			);
 			productName = WellnestOneUser;
 			productReference = 43A3C6512919066B00CF1C0A /* Dev.app */;
 			productType = "com.apple.product-type.application";
@@ -852,6 +855,8 @@
 				43A3C6C0291913D500CF1C0A /* Resources */,
 				5DB5E285297ABB08001A16A6 /* Embed Frameworks */,
 				EF4B8830BB1537ABC642A6D3 /* [CP] Embed Pods Frameworks */,
+				5D7444D72989336200C3BD50 /* ShellScript */,
+				5D5395A4298A2D8A00239858 /* DYSM Script */,
 			);
 			buildRules = (
 			);
@@ -886,6 +891,8 @@
 				Base,
 			);
 			mainGroup = 43A3C6482919066B00CF1C0A;
+			packageReferences = (
+			);
 			productRefGroup = 43A3C6522919066B00CF1C0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1062,6 +1069,64 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Dev/Pods-Dev-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		5D0D5A282988E2D000C76869 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		5D5395A4298A2D8A00239858 /* DYSM Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "DYSM Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"find ${DWARF_DSYM_FOLDER_PATH}\" -name \"*.dSYM\" | xargs -I \\{\\} \"$PODS_ROOT/Fabric/upload-symbols\" -gsp \"$PODS_ROOT/../GoogleService-Info.plist\" -p ios \\{\\}\n";
+		};
+		5D7444D72989336200C3BD50 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
 		};
 		EF4B8830BB1537ABC642A6D3 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1293,7 +1358,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
