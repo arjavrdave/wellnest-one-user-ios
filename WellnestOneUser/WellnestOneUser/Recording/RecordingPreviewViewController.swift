@@ -304,8 +304,7 @@ class RecordingPreviewViewController: UIParentViewController, UIScrollViewDelega
         self.recording = recording
         
         self.lblPatientName.text = self.patient?.fullName
-        self.lblGenderAge.text = "\(self.patient?.patientGender ?? "Male") | \(self.patient?.age ?? 0) years"
-        
+        self.lblGenderAge.text = "\(self.patient?.patientGender ?? self.recording?.patient?.patientGender ?? "Male") | \(self.patient?.age ?? self.recording?.patient?.age ?? 0) years"
         if pageType == .withoutPatient || pageType == .recordingCompleted {
             self.lblTitle.text = recording.displayDateForLanding
         } else {
