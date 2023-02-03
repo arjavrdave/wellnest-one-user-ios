@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "E5054E77-10FC-40BD-8955-B047409B0647"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D23F7725-AE64-451F-AD0A-39C6DD89901B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WellnestOneUser/Profile/CreateProfilePresenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "createProfile(account:image:storage:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0AF3D292-C5AF-44CE-B345-1871E73E9DA1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WellnestOneUser/AppDelegate.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "userNotificationCenter(_:willPresent:withCompletionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0AF3D292-C5AF-44CE-B345-1871E73E9DA1 - e0933dbf5e7f5826"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Dev.AppDelegate.userNotificationCenter(_: __C.UNUserNotificationCenter, willPresent: __C.UNNotification, withCompletionHandler: (__C.UNNotificationPresentationOptions) -&gt; ()) -&gt; ()"
+                  moduleName = "Dev"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/niharjagad/Documents/wellnest-one-user-ios/WellnestOneUser/WellnestOneUser/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "0AF3D292-C5AF-44CE-B345-1871E73E9DA1 - e0933dbf5e7f5826"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Dev.AppDelegate.userNotificationCenter(_: __C.UNUserNotificationCenter, willPresent: __C.UNNotification, withCompletionHandler: (__C.UNNotificationPresentationOptions) -&gt; ()) -&gt; ()"
+                  moduleName = "Dev"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/niharjagad/Documents/wellnest-one-user-ios/WellnestOneUser/WellnestOneUser/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "344">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

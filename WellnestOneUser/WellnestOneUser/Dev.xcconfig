@@ -1,0 +1,21 @@
+//
+//  Dev.xcconfig
+//  WellnestOneUser
+//
+//  Created by Nihar Jagad on 07/11/22.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "Pods/Target Support Files/Pods-Dev/Pods-Dev.debug.xcconfig"
+#include "Pods/Target Support Files/Pods-Dev/Pods-Dev.release.xcconfig"
+SLASH = /
+
+apiKey = a
+apiPassword = b
+BASE_URL = https:$(SLASH)/dev.wellnest.tech
+AZURE_BASE_URL = https:/$(SLASH)wellnestdev.blob.core.windows.net
+AZURE_STORAGE_NAME = wellnestdev
+//TODO: Need to be change
+AMPLITUDE_KEY = 33878f0679d58d1f71c5ad3fcf7bc430
+

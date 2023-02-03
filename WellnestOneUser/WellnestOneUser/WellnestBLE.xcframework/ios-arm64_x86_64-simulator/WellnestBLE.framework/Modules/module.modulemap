@@ -1,0 +1,11 @@
+framework module WellnestBLE {
+  umbrella header "WellnestBLE.h"
+
+  export *
+  module * { export * }
+}
+
+module WellnestBLE.Swift {
+    header "WellnestBLE-Swift.h"
+    requires objc
+}
